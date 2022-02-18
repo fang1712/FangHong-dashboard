@@ -179,9 +179,9 @@
   <!-- svelte-ignore a11y-missing-content -->
   <h1>My Dashboard</h1>
   <caption>School Timetable</caption>
-<table class="table">
+<table class="table text-center table-bordered table-striped caption-top">
     <thead>
-      <tr>
+      <tr class="table-dark">
         <th scope="col">#</th>
         <th scope="col">1</th>
         <th scope="col">2</th>
@@ -198,7 +198,7 @@
     </thead>
     <tbody>
       <tr>
-        <th scope="row">MON</th>
+        <th class="table-dark" scope="row">MON</th>
         {#each timetable.Monday as timeSlot, index}
         <td colspan={timeSlot.period} class={timeSlot.style}>
         <button type="button"class="btn">{timeSlot.name} </button> 
@@ -207,7 +207,7 @@
       
       </tr>
       <tr>
-        <th scope="row">TUE</th>
+        <th class="table-dark" scope="row">TUE</th>
         {#each timetable.Tuesday as timeSlot, index}
         <td colspan={timeSlot.period} class={timeSlot.style}>
         <button type="button"class="btn">{timeSlot.name} </button> 
@@ -215,7 +215,7 @@
       {/each}
       </tr>
       <tr>
-        <th scope="row">WED</th>
+        <th class="table-dark" scope="row">WED</th>
         {#each timetable.Wednesday as timeSlot, index}
         <td colspan={timeSlot.period} class={timeSlot.style}>
         <button type="button"class="btn">{timeSlot.name} </button> 
@@ -223,7 +223,7 @@
       {/each}
       </tr>
       <tr>
-        <th scope="row">THU</th>
+        <th class="table-dark" scope="row">THU</th>
         {#each timetable.Thursday as timeSlot, index}
         <td colspan={timeSlot.period} class={timeSlot.style}>
         <button type="button"class="btn">{timeSlot.name} </button> 
@@ -231,7 +231,7 @@
       {/each}
       </tr>
       <tr>
-        <th scope="row">FRI</th>
+        <th class="table-dark" scope="row">FRI</th>
         {#each timetable.Friday as timeSlot, index}
         <td colspan={timeSlot.period} class={timeSlot.style}>
         <button type="button"class="btn">{timeSlot.name} </button> 
