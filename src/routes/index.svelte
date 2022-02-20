@@ -6,28 +6,33 @@ if (day==="Monday"){
     ...timetable.Monday,
     { name: "??", period: 1, style: "" }
   ];
-   if (day==="Tuesday"){
+}
+   else if (day==="Tuesday"){
 	timetable.Tuesday = [
     ...timetable.Tuesday,
     { name: "??", period: 1, style: "" }
   ];
-   if (day==="Wednesday"){
+   }
+  else  if (day==="Wednesday"){
 	timetable.Wednesday = [
     ...timetable.Wednesday,
     { name: "??", period: 1, style: "" }
   ];
-   if (day==="Thursday"){
+  }
+  else if (day==="Thursday"){
 	timetable.Thursday = [
     ...timetable.Thursday,
     { name: "??", period: 1, style: "" }
   ];
-   if (day==="Friday"){
+  }
+   else if (day==="Friday"){
 	timetable.Friday = [
     ...timetable.Friday,
     { name: "??", period: 1, style: "" }
   ];
 }	
    }
+   
   let timetable = {
 	Monday: [
   	{
@@ -299,7 +304,7 @@ if (day==="Monday"){
 </div>
 <div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">Period </span>
-  <input type="Number" class="form-control">
+  <input type="number" class="form-control">
 </div>
         <div class="input-group mb-3">
   <label class="input-group-text" for="styleSelect">style</label>
